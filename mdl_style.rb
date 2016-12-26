@@ -1,0 +1,9 @@
+# Markdown linter (mdl) style
+all
+
+# Conflicts with comments in Jekyll front matter blocks
+exclude_rule 'MD022' # Headers should be surrounded by blank lines
+exclude_rule 'MD041' # First line in file should be a top level header
+
+# Extend the default line length of 80
+rule 'MD013', line_length: 120

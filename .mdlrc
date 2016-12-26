@@ -1,0 +1,2 @@
+# Markdown linter (mdl) configuration
+style "mdl_style.rb"
