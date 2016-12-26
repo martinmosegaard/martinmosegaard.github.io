@@ -1,4 +1,6 @@
-language: ruby
+language: bash
+
+install: gem install mdl
 
 script:
   - mdl .
