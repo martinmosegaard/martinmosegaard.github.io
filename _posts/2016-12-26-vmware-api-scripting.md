@@ -5,6 +5,8 @@ date:   2016-12-26
 categories: vmware
 ---
 
+# Infrastructure as code with vSphere 6.5
+
 *First published on <http://www.praqma.com/stories/vmware-api-scripting/>*
 ![Servers](/images/multipleserver.jpg){: .pic .medium .center}
 
@@ -27,10 +29,7 @@ The vSphere API has bindings for multiple languages. This post uses the Ruby bin
 Like its relatives, `pyvmomi` and `govmomi`, it is available as open source on GitHub with both guides and samples
 for getting started.
 
-<br/>
-
 ![VMware API scripting](/images/vmware-api-scripting.png){: .pic .medium .center}
-
 
 ## The Inventory and the MOB
 
@@ -50,7 +49,6 @@ scripts.
 The MOB is available at the `mob` context of the server, for example: `https://hostname.company.com/mob`. But be
 aware that you [may need to enable it](http://www.virtuallyghetto.com/2015/02/quick-tip-vsphere-mob-is-disabled-by-default-in-esxi-6-0.html){: target="\_blank"}.
 *Hint:* In the new web UI that comes with ESXi 6.5, you can enable the MOB directly from the Help menu.
-
 
 ## Running ESXi in VirtualBox
 
@@ -75,7 +73,6 @@ version, `VMware-VMvisor-Installer-6.5.0-4564106.x86_64.iso`. Then I took the fo
 - Change the network adapter to be a `Host-only Adapter`.
 - Attach the ISO.
 - Power on and start the installation. Ignore the warning about hardware virtualization not enabled.
-
 
 ## Results and Limitations
 
@@ -129,8 +126,6 @@ Datacenter [dc]: ha-datacenter
 This post showed you how to access the vSphere API directly. You may not always need this. If you use Chef for example,
 you may be able to use their wrapper, [knife-vsphere](https://github.com/chef-partners/knife-vsphere){: target="\_blank"}. But, as with
 most open source, it may be missing just that bit of functionality that you require.
-
-
 
 ## More Resources
 
